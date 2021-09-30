@@ -1,0 +1,59 @@
+ *{
+	box-sizing: border-box;
+}
+body{
+	font-family: cursive;
+	margin: 15px 30px;
+	font-size: 20px;
+	padding: 15px;
+  
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.contain{
+	background-color:lightyellow;
+	padding: 20px;
+	border: 2px Solid black;
+	border-radius: 10px;
+}
+select,textarea{
+	width: 30%;
+	padding: 15px;
+	border: 2px Solid black;
+	border-radius: 5px;
+	margin: 10px;
+}
+label{
+    cursor: pointer;
+}
+input{
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+}
+fieldset{
+	background-color: rgb(155,167,89);
+	border: 2px Solid black;
+}
+.main{
+	text-align: center;
+}
+.sub{
+	background-color:rgba(228, 62, 40, 0.8);
+    text-align: center;
+	color: rgb(51, 12, 122);
+	padding: 9px 20px;
+	border: 2px solid black;
+	border-radius: 10px;
+    margin-left: 40px;
+	cursor: pointer;
+    width: 40%;
+}
+ .sub:hover{
+	background-color: rgb(113,134,235);
+  }
+  

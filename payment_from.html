@@ -1,64 +1,17 @@
 <!Doctype html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
 <title>Paymentt from </title>
-<style>
-  *{
-	box-sizing: border-box;
-}
-body{
-	font-family: cursive;
-	margin: 15px 30px;
-	font-size: 20px;
-	padding: 15px;
-}
-.contain{
-	background-color:lightyellow;
-	padding: 20px;
-	border: 2px Solid black;
-	border-radius: 10px;
-}
-input(type="text"),
-input(type="email"),
-input(type="number"),
-input(type="password"),
-input(type="date"),
-select,
-textarea{
-	width: 100%;
-	padding: 15px;
-	border: 2px Solid black;
-	border-radius: 5px;
-	margin: 10px;
-}
-fieldset{
-	background-color: rgb(155,167,89);
-	border: 2px Solid black;
-}
-.main{
-	text-align: center;
-}
-.sub{
-	background-color:#4fbc;
-	color: brown;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	width: 80%; 
-}
- .sub:hover{
-	background-color: rgb(113,134,235);
-  }
-  </style>
 </head>
 <body>
   <div class= "contain">
   <from action = "Google/google.com">
    <h1 class= "main">Payment From </h1>
+   <div class="middle">
     <p> required fields are followed by * </p>
    <h2>contact information </h2>
-    <p> Name:* <input type = "text" name = "name" required placeholder="Name" >
+    <p> <label for="name">Name:*</label> <input type = "text" name = "name" id="name" required placeholder="Name" >
     </p>
      <fieldset>
      <legend> Gender* </legend>
@@ -67,18 +20,19 @@ fieldset{
      </p>
       </fieldset>
      <p>
-       address:<textarea name = "address" id = "address" col ="100" rows = "4"> 
+       <label for="address">Address</label><br>
+       <textarea name = "address" class="address" id = "address" > 
              </textarea>
       </p>
       <p>
-          Email:* <input type = "email" name = "email" id = "email" required>
+          <label for="email">Email:* </label><input type = "email" name = "email" id = "email" required>
        </p>
      <p>
-        pincode:* <input type = "number" name = "pincode" id = "pincode" required>
+        <label for="pincode">pincode:*</label> <input type = "number" name = "pincode" id = "pincode" required>
       </p>
       <hr>
       <h2> Payment information </h2>
-       <p> card type:*
+       <p> <label for="card_type">card type:*</label>
           <select name = "card_type" id = "card_type" required>
              <option value = "">--select a card type--</option>
              <option value = "cradit card"> cradit card </option>
@@ -88,18 +42,20 @@ fieldset{
           </select>
          </p>
       <p>
-        card number * <input type ="number" name = "card_ number" id = "card_number"required>
+        <label for="card_number">card number *</label>
+         <input type ="number" name = "card" id = "card_number"required>
       </p>
      <p>
-      Expiration Date :*
+      <label for="exp_date">Expiration Date :*</label>
            <input type = "date" name = "exp_ date" id = "exp_ date" required>
       </p>
      <p>
-         cvv <input type = "password" name = "cvv" id = "cvv">
-      </p>
-        <input type = "button" value = "pay now" class="sub">
-     </p>
+         <label for="cvv">cvv</label> <input type = "password" name = "cvv" id = "cvv">
+     <div class="button">
+      <input type = "button" value = "pay now" class="sub">
+     </div>
       </from>
+      </div>
    </div>
 </body>
 </html>
